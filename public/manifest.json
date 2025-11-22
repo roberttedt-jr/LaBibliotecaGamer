@@ -8,12 +8,12 @@
   "description": "Descubre y organiza tus películas y series favoritas.",
   "icons": [
     {
-      "src": "vite.svg",
+      "src": "logo.png",
       "sizes": "192x192",
       "type": "image/svg+xml"
     },
     {
-      "src": "vite.svg",
+      "src": "logo.png",
       "sizes": "512x512",
       "type": "image/svg+xml"
     }
