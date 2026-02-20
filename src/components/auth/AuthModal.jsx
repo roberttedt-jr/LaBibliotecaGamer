@@ -61,7 +61,10 @@ export const AuthModal = ({ onClose }) => {
                         <div className="relative">
                             <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={18} />
                             <input
+                                id="email"
                                 type="email"
+                                name="email"
+                                autoComplete="username"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder-white/20 focus:border-white/40 focus:outline-none transition-colors"
@@ -76,7 +79,10 @@ export const AuthModal = ({ onClose }) => {
                         <div className="relative">
                             <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={18} />
                             <input
+                                id="password"
                                 type="password"
+                                name="password"
+                                autoComplete={isLogin ? "current-password" : "new-password"}
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder-white/20 focus:border-white/40 focus:outline-none transition-colors"
@@ -104,7 +110,7 @@ export const AuthModal = ({ onClose }) => {
                         {isLogin ? '¿No tienes cuenta? Regístrate' : '¿Ya tienes cuenta? Inicia sesión'}
                     </button>
                 </div>
-            </GlassPanel>
-        </div>
+            </GlassPanel >
+        </div >
     );
 };

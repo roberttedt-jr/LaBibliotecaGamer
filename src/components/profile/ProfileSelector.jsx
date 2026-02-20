@@ -35,7 +35,7 @@ export const ProfileSelector = ({ profiles, onSelect, onCreate, onDelete, onClos
                     <h2 className="text-3xl font-bold text-white text-center mb-10">Nuevo Perfil</h2>
 
                     <div className="flex justify-center mb-10">
-                        <div className={`w-40 h-40 rounded-[2.5rem] flex items-center justify-center text-white text-7xl bg-gradient-to-br ${newAvatar.gradient} shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-4 ring-white/10`}>
+                        <div className={`w-40 h-40 rounded-full flex items-center justify-center text-white text-7xl bg-gradient-to-br ${newAvatar.gradient} shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-4 ring-white/10`}>
                             {newAvatar.icon}
                         </div>
                     </div>
@@ -45,7 +45,7 @@ export const ProfileSelector = ({ profiles, onSelect, onCreate, onDelete, onClos
                             <button
                                 key={av.id}
                                 onClick={() => setNewAvatar(av)}
-                                className={`aspect-square rounded-2xl flex items-center justify-center text-white transition-all duration-300 hover:scale-110 bg-gradient-to-br ${av.gradient} ${newAvatar.id === av.id ? 'ring-4 ring-white shadow-lg scale-110' : 'opacity-40 hover:opacity-100'}`}
+                                className={`aspect-square rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 bg-gradient-to-br ${av.gradient} ${newAvatar.id === av.id ? 'ring-4 ring-white shadow-lg scale-110' : 'opacity-40 hover:opacity-100'}`}
                             >
                                 <div className="scale-75">{av.icon}</div>
                             </button>
@@ -86,7 +86,7 @@ export const ProfileSelector = ({ profiles, onSelect, onCreate, onDelete, onClos
                             <motion.button
                                 whileHover={{ scale: 1.1, y: -10 }}
                                 onClick={() => onSelect(profile)}
-                                className={`w-24 h-24 md:w-40 md:h-40 rounded-[2rem] flex items-center justify-center text-white shadow-2xl ring-4 ring-transparent hover:ring-white/50 bg-gradient-to-br ${profile.avatar.gradient}`}
+                                className={`w-24 h-24 md:w-40 md:h-40 rounded-full flex items-center justify-center text-white shadow-2xl ring-4 ring-transparent hover:ring-white/50 bg-gradient-to-br ${profile.avatar.gradient}`}
                             >
                                 {profile.avatar.icon}
                             </motion.button>
@@ -102,7 +102,7 @@ export const ProfileSelector = ({ profiles, onSelect, onCreate, onDelete, onClos
                             <motion.button
                                 whileHover={{ scale: 1.1 }}
                                 onClick={() => setIsCreating(true)}
-                                className="w-24 h-24 md:w-40 md:h-40 rounded-[2rem] flex items-center justify-center bg-white/5 border-2 border-dashed border-white/20 text-white/40 hover:text-white hover:border-white hover:bg-white/10"
+                                className="w-24 h-24 md:w-40 md:h-40 rounded-full flex items-center justify-center bg-white/5 border-2 border-dashed border-white/20 text-white/40 hover:text-white hover:border-white hover:bg-white/10"
                             >
                                 <Plus size={40} />
                             </motion.button>

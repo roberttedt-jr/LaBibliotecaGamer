@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Biblioteca Gamer — Te recomiendo qué jugar</title>
+    <meta name="description"
+        content="Recomendaciones de videojuegos honestas y sin relleno. Descubre qué jugar cuando no sabes qué jugar. Curadas por Roberto.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="La Biblioteca Gamer — Te recomiendo qué jugar">
+    <meta property="og:description"
+        content="Recomendaciones de videojuegos honestas y sin relleno. Descubre qué jugar cuando no sabes qué jugar.">
+    <meta property="og:image" content="assets/logo.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+    <!-- Google Font: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="Inicio — La Biblioteca Gamer">
+                <img src="assets/logo.jpg" alt="Logo La Biblioteca Gamer" width="40" height="40">
+                <span>Biblioteca</span> Gamer
+            </a>
+            <nav>
+                <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links" id="nav-links" role="navigation">
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+        <div class="container">
+            <h1>La <span>Biblioteca</span> Gamer</h1>
+            <p class="subtitle">Te recomiendo qué jugar cuando no sabes qué jugar.</p>
+            <div class="hero-buttons">
+                <a href="biblioteca.html" class="btn btn-primary">🎮 Explorar biblioteca</a>
+                <a href="#newsletter" class="btn btn-secondary">📬 Suscribirme</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CÓMO FUNCIONA ========== -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Cómo <span>funciona</span></h2>
+            <div class="steps-grid">
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <h3>Busca tu estilo</h3>
+                    <p>Filtra por categoría: acción, terror, indie, coop… Encuentra juegos que encajen contigo.</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <h3>Lee por qué mola</h3>
+                    <p>Cada juego tiene una razón honesta por la que te lo recomiendo. Sin spoilers, sin hype vacío.</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <h3>Dale al play</h3>
+                    <p>Elige tu plataforma, descarga y disfruta. Así de simple.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LISTAS POPULARES ========== -->
+    <section class="popular-lists">
+        <div class="container">
+            <h2 class="section-title">Listas <span>populares</span></h2>
+            <div class="lists-grid">
+                <a href="biblioteca.html?genre=4" class="list-card animate-on-scroll">
+                    <div class="list-card-icon">⚔️</div>
+                    <div>
+                        <h3>Los mejores juegos de acción</h3>
+                        <p>Combate, adrenalina y tiroteos épicos.</p>
+                    </div>
+                </a>
+                <a href="biblioteca.html?genre=51" class="list-card animate-on-scroll">
+                    <div class="list-card-icon">💎</div>
+                    <div>
+                        <h3>Indies imprescindibles</h3>
+                        <p>Pequeñas joyas que no te puedes perder.</p>
+                    </div>
+                </a>
+                <a href="biblioteca.html?genre=5" class="list-card animate-on-scroll">
+                    <div class="list-card-icon">🧙</div>
+                    <div>
+                        <h3>RPGs que enganchan</h3>
+                        <p>Historias épicas y mundos por explorar.</p>
+                    </div>
+                </a>
+                <a href="biblioteca.html?genre=10" class="list-card animate-on-scroll">
+                    <div class="list-card-icon">🧠</div>
+                    <div>
+                        <h3>Estrategia para mentes inquietas</h3>
+                        <p>Piensa, planifica y conquista.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-box animate-on-scroll">
+                <h2>📬 Newsletter Gamer</h2>
+                <p class="nl-desc">1 email a la semana con 5 juegos recomendados. Sin spam, solo recomendaciones
+                    honestas.</p>
+                <!--
+          NOTA: Este formulario es un placeholder.
+          Para conectar con un servicio de newsletter (Mailchimp, Brevo, Buttondown...):
+          1. Cambia el action="" por la URL del formulario de tu proveedor.
+          2. Ajusta los name="" de los inputs según los campos que requiera.
+        -->
+                <form class="nl-form" action="#" method="POST" id="newsletter-form">
+                    <input type="text" name="name" placeholder="Tu nombre" required aria-label="Tu nombre">
+                    <input type="email" name="email" placeholder="Tu email" required aria-label="Tu email">
+                    <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </form>
+                <p class="nl-privacy">Al suscribirte aceptas nuestra <a href="privacidad.html">política de
+                        privacidad</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-links">
+                <a href="privacidad.html">Privacidad</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.tiktok.com/@labibliotecagamer" target="_blank" rel="noopener" aria-label="TikTok">
+                    <!-- TikTok icon (SVG inline) -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.69a8.27 8.27 0 0 0 4.76 1.51v-3.5a4.84 4.84 0 0 1-1-.01Z" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@labibliotecagamer" target="_blank" rel="noopener"
+                    aria-label="YouTube">
+                    <!-- YouTube icon (SVG inline) -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.54 15.57V8.43L15.82 12l-6.28 3.57Z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2025 La Biblioteca Gamer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scroll-top" aria-label="Volver arriba">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
